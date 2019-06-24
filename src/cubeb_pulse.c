@@ -4,7 +4,6 @@
  * This program is made available under an ISC-style license.  See the
  * accompanying file LICENSE for details.
  */
-#undef NDEBUG
 #include <assert.h>
 #include <dlfcn.h>
 #include <pulse/pulseaudio.h>

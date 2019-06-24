@@ -4,8 +4,6 @@
  * This program is made available under an ISC-style license.  See the
  * accompanying file LICENSE for details.
  */
-#undef NDEBUG
-
 #include <TargetConditionals.h>
 #include <assert.h>
 #include <mach/mach_time.h>
