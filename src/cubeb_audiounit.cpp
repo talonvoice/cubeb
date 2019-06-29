@@ -634,8 +634,7 @@ audiounit_output_callback(void * user_ptr,
      * Otherwise, if we had more than expected callbacks in a row, or we're
      * currently switching, we add some silence as well to compensate for the
      * fact that we're lacking some input data. */
-    uint32_t input_frames_needed =
-      minimum_resampling_input_frames(stm, stm->frames_written);
+    uint32_t input_frames_needed = 0;
     long missing_frames = input_frames_needed - stm->frames_read;
     if (missing_frames > 0) {
       stm->input_linear_buffer->push_silence(missing_frames * stm->input_desc.mChannelsPerFrame);
