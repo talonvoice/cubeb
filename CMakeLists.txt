@@ -52,8 +52,6 @@ endif()
 
 # On OS/2, visibility attribute is not supported.
 if(NOT OS2)
-  set(CMAKE_C_VISIBILITY_PRESET hidden)
-  set(CMAKE_CXX_VISIBILITY_PRESET hidden)
   set(CMAKE_VISIBILITY_INLINES_HIDDEN 1)
 endif()
 
