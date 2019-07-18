@@ -133,6 +133,7 @@ install(
 add_library(speex OBJECT
   src/speex/resample.c)
 set_target_properties(speex PROPERTIES POSITION_INDEPENDENT_CODE TRUE)
+target_compile_definitions(speex PRIVATE _USE_SSE _USE_SSE2)
 target_compile_definitions(speex PRIVATE OUTSIDE_SPEEX)
 target_compile_definitions(speex PRIVATE FLOATING_POINT)
 target_compile_definitions(speex PRIVATE EXPORT=)
