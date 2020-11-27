@@ -61,6 +61,11 @@
 #include "config.h"
 #endif
 
+#ifdef __x86_64__
+#define _USE_SSE
+#define _USE_SSE2
+#endif
+
 #ifdef OUTSIDE_SPEEX
 #include <stdlib.h>
 static void *speex_alloc (int size) {return calloc(size,1);}
